@@ -35,16 +35,16 @@
     >
         <form
             on:submit|preventDefault={redirect()}
-            class="bg-gray-300 p-10 rounded-lg"
+            class="flex sm:flex-row flex-col bg-gray-300 p-4 rounded-lg"
         >
             <input
                 bind:value={ssid}
-                class="bg-gray-200 rounded-md p-4 mr-4 min-w-min"
+                class="bg-gray-200 rounded-t-md sm:rounded-md p-4 mr-0 sm:mr-4 min-w-min"
                 type="text"
                 placeholder="scoresaber profile id/link"
             />
             <button
-                class="bg-gray-200 p-4 rounded-md"
+                class="bg-gray-200 p-4 rounded-b-md sm:rounded-md"
                 on:click={() => redirect()}>go</button
             >
         </form>
