@@ -1,6 +1,6 @@
 <script>
   import { fly } from "svelte/transition";
-  import { onMount } from "svelte";
+  import { onDestroy, onMount } from "svelte";
   export let data;
 
   let ready = false;
@@ -8,6 +8,10 @@
   onMount(async () => {
     ready = true;
     document.body.style.backgroundColor = data.scoresaber.backgroundColor;
+  });
+
+  onDestroy(async () => {
+    if (ready) document.body.style.backgroundColor = "#000212";
   });
 </script>
 
