@@ -41,7 +41,7 @@
                 bind:value={ssid}
                 class="bg-gray-200 rounded-md p-4 mr-4 min-w-min"
                 type="text"
-                placeholder="enter a scoresaber id"
+                placeholder="scoresaber profile id/link"
             />
             <button
                 class="bg-gray-200 p-4 rounded-md"
