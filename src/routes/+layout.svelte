@@ -8,6 +8,10 @@
     </ul>
 </nav>
 
+<svelte:head>
+    <title>bsstats</title>
+</svelte:head>
+
 <slot />
 
 <style>
